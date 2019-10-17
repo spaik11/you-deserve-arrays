@@ -10,17 +10,14 @@ function getIndex3(arr) {
   if(arr.length >= 4) {
     return arr[3];
   } else if(arr.length < 4) {
-    return arr[arr.length - 1];
+    return getLastItemFrom(arr);
   }
 }
 
 function firstItemIsNumber(arr) {
-  if(typeof arr[0] == 'number') {
-    return true;
-  } else {
-    return false;
-  }
+  return typeof arr[0] === 'number';
 }
+
 
 function isLongList(arr) {
   if(arr.length > 10) {
