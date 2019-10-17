@@ -20,13 +20,8 @@ function firstItemIsNumber(arr) {
 
 
 function isLongList(arr) {
-  if(arr.length > 10) {
-    return true;
-  } else if(arr.length === 10) {
-    return true;
-  } else {
-    return false;
-  }
+  return arr.length >= 10;
+  return arr.length > 9;
 }
 
 
